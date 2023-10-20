@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  tr, th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  [colspan="4"] {            /* número 1 */
+    background-color: violet;
+  }
+
+  [colspan="2"] {            /* números 4 e 7 */
+    background-color: orangered;
+  }
+
+  [rowspan="2"] {            /* número 5 */
+    background-color: greenyellow;
+  }
+
+td + td {                    /* número 10 */
+    background-color: blue;
+  }
+
+  th {                      /* números 2, 3 e 8 */
+    background-color: red;
+  }
+
+  tbody > tr {               /* números 6 e 9 */
+    background-color: gray;
+  }
